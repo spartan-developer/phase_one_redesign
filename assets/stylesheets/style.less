@@ -3,37 +3,63 @@
 @blue: #5B83AD;
 @yellow: #FFFFE0;
 
-.classification-wrapper {
-  .make-md-column(3);
-}
-
-label {
-  .make-md-column(2);
-}
-
-.value-wrapper {
-  .make-md-column(7);
-}
-
 body {
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-
-  .template {
-    background-color: @yellow;
-  }
-
-  .helper {
-    border:1px solid @blue;
-  }
-
-  .styled {
-    -webkit-transform: rotate(-30deg);
-    -moz-transform: rotate(-30deg);
-    -ms-transform: rotate(-30deg);
-    -o-transform: rotate(-30deg);
-    transform: rotate(-30deg);
-
-    margin-top: 100px;
-    position: absolute;
-  }
+  font-size: 14px;
+}
+.table {
+  display: table;
+  width: 100%;
+}
+.table-row {
+  display: table-row;
+}
+#exercise-parameters {
+  display: table-row;
+}
+#exercise-parameters #exercise-parameters-fields {
+  padding: 1em;
+  display: table-cell;
+  border-bottom: solid 4px #CCC;
+  vertical-align: top;
+  width: 50%;
+}
+#exercise-parameters #exercise-parameters-fields .form-horizontal:last-child {
+  margin-bottom: 0;
+}
+#exercise-parameters #map {
+  border-left: solid 4px #CCC;
+  border-bottom: solid 4px #CCC;
+  vertical-align: top;
+  display: table-cell;
+  width: 50%;
+}
+#exercise-parameters .field {
+  display: table-row;
+}
+#exercise-parameters .field .classification-wrapper {
+  display: table-cell;
+  vertical-align: middle;
+  width: 25%;
+}
+#exercise-parameters .field label {
+  display: table-cell;
+  width: 20%;
+  text-align: right;
+  vertical-align: middle;
+}
+#exercise-parameters .field .required-indicator {
+  display: table-cell;
+  vertical-align: middle;
+  color: red;
+  font-weight: bold;
+  width: 5%;
+  text-align: center;
+}
+#exercise-parameters .field .required-indicator i {
+  font-size: 12px;
+  color: #EE3333;
+}
+#exercise-parameters .field .value-wrapper {
+  display: table-cell;
+  vertical-align: middle;
 }

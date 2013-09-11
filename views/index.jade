@@ -1,50 +1,69 @@
 extends layout
 
 block content
-  div(style="display:table-row")
-    div.form-horizontal(style="width:50%;background-color:#EEE;display:table-cell;vertical-align:top;padding-top:1em")
-      div.container
-        div.row.form-group
+  section#exercise-parameters
+    section#exercise-parameters-fields
+      div.form-horizontal.table
+        .field
           .classification-wrapper
             select.classification.selectpicker
-          label.control-label Title
+          label Title
+          .required-indicator
+            i.icon-asterisk
           .value-wrapper
             input.form-control(value="blah")
-        fieldset
-          legend Dates
-          div.row.form-group
-            .classification-wrapper
-              select.classification.selectpicker
-            label.control-label From
-            .value-wrapper.col-md-3
-              input.form-control(value="blah")
-            label.control-label.col-md-1 to
-            .value-wrapper.col-md-3
-              input.form-control(value="blah")
-        fieldset
-          legend Exercise Parameters
-          div.row.form-group
-            .classification-wrapper
-              select.classification.selectpicker
-            label.control-label Location
-            .value-wrapper
-              input.form-control(value="blah")
-          div.row.form-group
-            .classification-wrapper
-              select.classification.selectpicker
-            label.control-label OE
-            .value-wrapper
-              input.form-control(value="blah")
-          div.row.form-group
-            .classification-wrapper
-              select.classification.selectpicker
-            label.control-label Type
-            .value-wrapper
-              input.form-control(value="blah")
-          div.row.form-group
-            .classification-wrapper
-              select.classification.selectpicker
-            label.control-label Operation
-            .value-wrapper
-              input.form-control(value="blah")
-    div.secondary(style="width:50%;background-color:green;display:table-cell")
+      fieldset(style="display: block;clear:both")
+        legend Dates
+      div.form-horizontal.table
+        div.field
+          .classification-wrapper
+            select.classification.selectpicker
+          label From
+          .required-indicator
+            i.icon-asterisk
+          .value-wrapper
+            input.form-control(value="blah")
+          label(style="width: 3%") to
+          .required-indicator
+            i.icon-asterisk
+          .value-wrapper
+            input.form-control(value="blah")
+      fieldset(style="display: block;clear:both")
+        legend Parameters
+      div.form-horizontal.table
+        div.field
+          .classification-wrapper
+            select.classification.selectpicker
+          label Operational Environment
+          .required-indicator
+            i.icon-asterisk
+          .value-wrapper
+            input.form-control(value="blah")
+      div.form-horizontal.table
+        div.field
+          .classification-wrapper
+            select.classification.selectpicker
+          label Training Location
+          .required-indicator
+            i.icon-asterisk
+          .value-wrapper
+            input.form-control(value="blah")
+      div.form-horizontal.table
+        div.field
+          .classification-wrapper
+            select.classification.selectpicker
+          label Operation
+          .required-indicator
+            i.icon-asterisk
+          .value-wrapper
+            input.form-control(value="blah")
+      div.form-horizontal.table
+        div.field
+          .classification-wrapper
+            select.classification.selectpicker
+          label Type
+          .required-indicator
+            i.icon-asterisk
+          .value-wrapper
+            input.form-control(value="blah")
+    section#map.secondary

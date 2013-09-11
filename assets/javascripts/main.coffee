@@ -81,3 +81,4 @@ require
       config = MapUtil.defaultMapConfig()
       @map = new OpenLayers.Map(config)
       @map.render($.find('.secondary')[0])
+      $('#map').height $('#exercise-parameters-fields').height() + 30
