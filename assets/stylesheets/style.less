@@ -1,0 +1,39 @@
+@import 'vendor/bootstrap/variables';
+@import 'vendor/bootstrap/mixins';
+@blue: #5B83AD;
+@yellow: #FFFFE0;
+
+.classification-wrapper {
+  .make-md-column(3);
+}
+
+label {
+  .make-md-column(2);
+}
+
+.value-wrapper {
+  .make-md-column(7);
+}
+
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+
+  .template {
+    background-color: @yellow;
+  }
+
+  .helper {
+    border:1px solid @blue;
+  }
+
+  .styled {
+    -webkit-transform: rotate(-30deg);
+    -moz-transform: rotate(-30deg);
+    -ms-transform: rotate(-30deg);
+    -o-transform: rotate(-30deg);
+    transform: rotate(-30deg);
+
+    margin-top: 100px;
+    position: absolute;
+  }
+}

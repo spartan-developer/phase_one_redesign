@@ -1,0 +1,51 @@
+extends layout
+
+block content
+  div(style="display:table-row")
+    div.form-horizontal(style="width:50%;background-color:#EEE;display:table-cell;vertical-align:top;padding-top:1em")
+      div.container
+        div.row.form-group
+          .classification-wrapper
+            select.classification.selectpicker
+          label.control-label Title
+          .value-wrapper
+            input.form-control(value="blah")
+        fieldset
+          legend Dates
+          div.row.form-group
+            .classification-wrapper
+              select.classification.selectpicker
+            label.control-label From
+            .value-wrapper.col-md-3
+              input.form-control(value="blah")
+            label.control-label.col-md-1 to
+            .value-wrapper.col-md-3
+              input.form-control(value="blah")
+        fieldset
+          legend Exercise Parameters
+          div.row.form-group
+            .classification-wrapper
+              select.classification.selectpicker
+            label.control-label Location
+            .value-wrapper
+              input.form-control(value="blah")
+          div.row.form-group
+            .classification-wrapper
+              select.classification.selectpicker
+            label.control-label OE
+            .value-wrapper
+              input.form-control(value="blah")
+          div.row.form-group
+            .classification-wrapper
+              select.classification.selectpicker
+            label.control-label Type
+            .value-wrapper
+              input.form-control(value="blah")
+          div.row.form-group
+            .classification-wrapper
+              select.classification.selectpicker
+            label.control-label Operation
+            .value-wrapper
+              input.form-control(value="blah")
+    div(style="width:50%;background-color:green;display:table-cell")
+      h1 Map
