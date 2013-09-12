@@ -49,22 +49,21 @@ body {
       text-align: right;
       vertical-align: middle;
     }
-    .required-indicator {
-      display: table-cell;
-      vertical-align: middle;
-      font-weight: bold;
-      width: 5%;
-      text-align: center;
-      i {
-        color: #EE3333;
-        font-size: 10px;
-        font-weight: normal;
-      }
-    }
     .value-wrapper {
       display: table-cell;
       vertical-align: middle;
     }
+  }
+}
+.required-indicator {
+  display: table-cell;
+  vertical-align: middle;
+  font-weight: bold;
+  width: 2em;
+  text-align: center;
+  i {
+    color: #EE3333;
+    font-size: .5em ;
   }
 }
 fieldset legend {
@@ -73,15 +72,16 @@ fieldset legend {
 label {
   color: #666;
 }
-div.bootstrap-select button {
+div.bootstrap-select.classification button {
   font-family: "Arial Narrow";
   height: 28px;
   font-size: 12px;
-  .btn { line-height: 1em; }
-  &:nth-child(odd) { background-color: green; }
+  .btn { line-height: .8em; }
+  background-color: green;
+  color: darkslategray;
   background-image: -moz-linear-gradient(left, rgb(18,199,54) 0%, white 8%);
 }
-#bottom {
+#middle, #bottom {
   .field {
     display: table-row;
     .classification-wrapper {
@@ -101,17 +101,6 @@ div.bootstrap-select button {
       vertical-align: middle;
       text-align: center;
       i { font-size: 14px; }
-    }
-    .required-indicator {
-      display: table-cell;
-      vertical-align: middle;
-      font-weight: bold;
-      width: 2.5%;
-      text-align: center;
-      i {
-        color: #EE3333;
-        font-size: 10px;
-      }
     }
     .value-wrapper {
       display: table-cell;
