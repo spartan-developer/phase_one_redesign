@@ -19,19 +19,20 @@ body {
 .table-row {
   display: table-row;
 }
+@theborder: solid 12px #F3F3F3;
 #exercise-parameters {
   display: table-row;
   #exercise-parameters-fields {
     padding: 1%;
     display: table-cell;
-    border-bottom: solid 4px #CCC;
+    border-bottom: @theborder;
     vertical-align: top;
     width: 50%;
     .form-horizontal:last-child { margin-bottom: 0; }
   }
   #map {
-    border-left: solid 4px #CCC;
-    border-bottom: solid 4px #CCC;
+    border-left: @theborder;
+    border-bottom: @theborder;
     vertical-align: top;
     display: table-cell;
     width: 50%;
@@ -63,7 +64,7 @@ body {
   text-align: center;
   i {
     color: #EE3333;
-    font-size: .5em ;
+    font-size: 8px;
   }
 }
 fieldset legend {
@@ -79,8 +80,10 @@ div.bootstrap-select.classification button {
   .btn { line-height: .8em; }
   background-color: green;
   color: darkslategray;
-  background-image: -moz-linear-gradient(left, green 0%, white 8%);
-  background-image: -webkit-linear-gradient(left, green 0%, white 8%);
+  background-image: -moz-linear-gradient(left, green 0%, green 5%, white 5%);
+}
+div.bootstrap-select.classification.secret button {
+  background-image: -moz-linear-gradient(left, firebrick 0%, firebrick 5%, white 5%);
 }
 #middle, #bottom {
   .field {
@@ -107,5 +110,10 @@ div.bootstrap-select.classification button {
       display: table-cell;
       vertical-align: middle;
     }
+  }
+}
+#bottom {
+  .value-wrapper {
+    padding-left: 1em;
   }
 }

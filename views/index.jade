@@ -32,7 +32,7 @@ block content
         div.form-horizontal.table
           div.field
             .classification-wrapper
-              select.classification.selectpicker
+              select.classification.selectpicker.secret
             label Operational Environment
             .required-indicator
               i.icon-asterisk
@@ -59,7 +59,7 @@ block content
         div.form-horizontal.table
           div.field
             .classification-wrapper
-              select.classification.selectpicker
+              select.classification.selectpicker.secret
             label Type
             .required-indicator
               i.icon-asterisk
@@ -98,7 +98,7 @@ block content
           div.form-horizontal.table
             div.field
               .classification-wrapper(style="padding-right: 1em;width: 20%")
-                select.classification.selectpicker
+                select.classification.selectpicker.secret
               .value-wrapper
                 input.form-control(value="Establish relationships with local population")
               .reorder
@@ -108,7 +108,7 @@ block content
           div.form-horizontal.table
             div.field
               .classification-wrapper(style="padding-right: 1em;width: 20%")
-                select.classification.selectpicker
+                select.classification.selectpicker.secret
               .value-wrapper
                 input.form-control(value="Provide defensive support and training to locals")
               .reorder
@@ -126,37 +126,35 @@ block content
           input.form-control(value="Personnel will learn difficulties in occupying territory under attack")
 
   div#bottom(style="padding:1%")
-    legend Commander's Training Objectives
+    fieldset
+      legend Commander's Training Objectives
     div.form-horizontal.table
       div.field
+        .classification-wrapper
+          select.classification.selectpicker
         .value-wrapper
-          div.form-horizontal.table
-            div.field
-              .classification-wrapper(style="padding-right: 1em;width: 20%")
-                select.classification.selectpicker
-              .value-wrapper
-                input.form-control(value="Objective 1")
-              .reorder
-                i.icon-reorder
-              .delete
-                i.icon-trash
-          div.form-horizontal.table
-            div.field
-              .classification-wrapper(style="padding-right: 1em;width: 20%")
-                select.classification.selectpicker
-              .value-wrapper
-                input.form-control(value="Objective 2")
-              .reorder
-                i.icon-reorder
-              .delete
-                i.icon-trash
-          div.form-horizontal.table
-            div.field
-              .classification-wrapper(style="padding-right: 1em;width: 20%")
-                select.classification.selectpicker
-              .value-wrapper
-                input.form-control(value="Objective 3")
-              .reorder
-                i.icon-reorder
-              .delete
-                i.icon-trash
+          input.form-control(value="Objective 1")
+        .reorder
+          i.icon-reorder
+        .delete
+          i.icon-trash
+    div.form-horizontal.table
+      div.field
+        .classification-wrapper
+          select.classification.selectpicker
+        .value-wrapper
+          input.form-control(value="Objective 2")
+        .reorder
+          i.icon-reorder
+        .delete
+          i.icon-trash
+    div.form-horizontal.table
+      div.field
+        .classification-wrapper
+          select.classification.selectpicker
+        .value-wrapper
+          input.form-control(value="Objective 3")
+        .reorder
+          i.icon-reorder
+        .delete
+          i.icon-trash
