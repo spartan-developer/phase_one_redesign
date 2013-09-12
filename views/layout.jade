@@ -2,9 +2,9 @@ doctype 5
 html
   head
     title Mimosa
-    link(rel='stylesheet', href='/stylesheets/style.css' + cachebust)
     link(rel='stylesheet', href='/stylesheets/vendor/bootstrap/bootstrap.css')
     link(rel='stylesheet', href='/stylesheets/bootstrap-select.css')
+    link(rel='stylesheet', href='/stylesheets/style.css' + cachebust)
     link(rel='stylesheet', href='/stylesheets/geo.css')
     link(href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css", rel="stylesheet")
 
@@ -18,6 +18,5 @@ html
       script(src='/javascripts/vendor/requirejs/require.js', data-main='/javascripts/main.js')
 
   body
-    div(style="display:table;width:100%")
-      block content
+    block content
 

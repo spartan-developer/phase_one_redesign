@@ -12,10 +12,10 @@ require
   , ($) ->
     $ ->
       $('select.classification').each ->
-        this.add(new Option('U', 'Unclassified'))
-        this.add(new Option('S', 'Secret'))
+        this.add(new Option('R//REL TO USA, GBR', 'Unclassified'))
+        this.add(new Option('Secret', 'Secret'))
         $(this).selectpicker()
-            
+
       class MapUtil
         @defaultMapConfig: (defaultLayers = [@defaultBaseLayer()]) ->
           config =

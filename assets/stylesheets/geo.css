@@ -1,9 +1,11 @@
 .openlayerContainer img {max-width:none !important}
 
-.olMap {
-    height:400px;
-    width:400px;
-}
+/*
+ *.olMap {
+ *    height:400px;
+ *    width:400px;
+ *}
+ */
 
 .mapselect_container {
     border: 1px solid #000;

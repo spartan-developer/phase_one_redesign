@@ -1,69 +1,126 @@
 extends layout
 
 block content
-  section#exercise-parameters
-    section#exercise-parameters-fields
-      div.form-horizontal.table
-        .field
-          .classification-wrapper
-            select.classification.selectpicker
-          label Title
-          .required-indicator
-            i.icon-asterisk
-          .value-wrapper
-            input.form-control(value="blah")
-      fieldset(style="display: block;clear:both")
-        legend Dates
-      div.form-horizontal.table
-        div.field
-          .classification-wrapper
-            select.classification.selectpicker
-          label From
-          .required-indicator
-            i.icon-asterisk
-          .value-wrapper
-            input.form-control(value="blah")
-          label(style="width: 3%") to
-          .required-indicator
-            i.icon-asterisk
-          .value-wrapper
-            input.form-control(value="blah")
-      fieldset(style="display: block;clear:both")
-        legend Parameters
-      div.form-horizontal.table
-        div.field
-          .classification-wrapper
-            select.classification.selectpicker
-          label Operational Environment
-          .required-indicator
-            i.icon-asterisk
-          .value-wrapper
-            input.form-control(value="blah")
-      div.form-horizontal.table
-        div.field
-          .classification-wrapper
-            select.classification.selectpicker
-          label Training Location
-          .required-indicator
-            i.icon-asterisk
-          .value-wrapper
-            input.form-control(value="blah")
-      div.form-horizontal.table
-        div.field
-          .classification-wrapper
-            select.classification.selectpicker
-          label Operation
-          .required-indicator
-            i.icon-asterisk
-          .value-wrapper
-            input.form-control(value="blah")
-      div.form-horizontal.table
-        div.field
-          .classification-wrapper
-            select.classification.selectpicker
-          label Type
-          .required-indicator
-            i.icon-asterisk
-          .value-wrapper
-            input.form-control(value="blah")
-    section#map.secondary
+  div(style="display:table;width:100%")
+    section#exercise-parameters
+      section#exercise-parameters-fields
+        div.form-horizontal.table
+          .field
+            .classification-wrapper
+              select.classification.selectpicker
+            label Title
+            .required-indicator
+              i.icon-asterisk
+            .value-wrapper
+              input.form-control(value="blah")
+        fieldset(style="display: block;clear:both")
+          legend Dates
+        div.form-horizontal.table
+          div.field
+            .classification-wrapper
+              select.classification.selectpicker
+            label From
+            .required-indicator
+              i.icon-asterisk
+            .value-wrapper
+              input.form-control(value="blah")
+            label(style="width: 3%") to
+            .value-wrapper
+              input.form-control(value="blah")
+        fieldset(style="display: block;clear:both")
+          legend Parameters
+        div.form-horizontal.table
+          div.field
+            .classification-wrapper
+              select.classification.selectpicker
+            label Operational Environment
+            .required-indicator
+              i.icon-asterisk
+            .value-wrapper
+              input.form-control(value="blah")
+        div.form-horizontal.table
+          div.field
+            .classification-wrapper
+              select.classification.selectpicker
+            label Training Location
+            .required-indicator
+              i.icon-asterisk
+            .value-wrapper
+              input.form-control(value="blah")
+        div.form-horizontal.table
+          div.field
+            .classification-wrapper
+              select.classification.selectpicker
+            label Operation
+            .required-indicator
+              i.icon-asterisk
+            .value-wrapper
+              input.form-control(value="blah")
+        div.form-horizontal.table
+          div.field
+            .classification-wrapper
+              select.classification.selectpicker
+            label Type
+            .required-indicator
+              i.icon-asterisk
+            .value-wrapper
+              input.form-control(value="blah")
+      section#map.secondary
+  div#bottom(style="padding:1%")
+    fieldset
+      legend Commander's Intent
+    div.form-horizontal.table
+      div.field
+        .classification-wrapper
+          select.classification.selectpicker
+        label Purpose
+        .required-indicator
+          i.icon-asterisk
+        .value-wrapper
+          input.form-control(value="blah")
+    div.form-horizontal.table
+      div.field
+        .classification-wrapper
+        label(style="vertical-align:top") Key Tasks
+        .required-indicator(style="vertical-align:top")
+          i.icon-asterisk
+        .value-wrapper
+          div.form-horizontal.table
+            div.field
+              .reorder
+                i.icon-reorder
+              .classification-wrapper(style="padding-right: 1em;width: 20%")
+                select.classification.selectpicker
+              .value-wrapper
+                input.form-control(value="blah")
+              .delete
+                i.icon-trash
+          div.form-horizontal.table
+            div.field
+              .reorder
+                i.icon-reorder
+              .classification-wrapper(style="padding-right: 1em;width: 20%")
+                select.classification.selectpicker
+              .value-wrapper
+                input.form-control(value="blah")
+              .delete
+                i.icon-trash
+          div.form-horizontal.table
+            div.field
+              .reorder
+                i.icon-reorder
+              .classification-wrapper(style="padding-right: 1em;width: 20%")
+                select.classification.selectpicker
+              .value-wrapper
+                input.form-control(value="blah")
+              .delete
+                i.icon-trash
+    div.form-horizontal.table
+      div.field
+        .classification-wrapper
+          select.classification.selectpicker
+        label End State
+        .required-indicator
+          i.icon-asterisk
+        .value-wrapper
+          input.form-control(value="blah")
