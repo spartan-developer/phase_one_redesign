@@ -20,6 +20,9 @@ body {
   display: table-row;
 }
 @theborder: solid 12px #F3F3F3;
+#middle, #bottom {
+  border-bottom: @theborder;
+}
 #exercise-parameters {
   display: table-row;
   #exercise-parameters-fields {
@@ -79,10 +82,20 @@ div.bootstrap-select.classification button {
   font-size: 12px;
   .btn { line-height: .8em; }
   color: darkslategray;
-  border-left: 10px solid green
+  /*border-left: 10px solid green*/
+
 }
 div.bootstrap-select.classification.secret button {
-  border-left: 10px solid firebrick;
+  background-image: url(/stylesheets/leftbarred.svg);
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+  background-size:60px
+}
+div.bootstrap-select.classification.green button {
+  background-image: url(/stylesheets/leftbargreen.svg);
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+  background-size:60px
 }
 #middle, #bottom {
   .field {
